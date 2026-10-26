@@ -1,0 +1,32 @@
+<%- include("partials/header", { pageTitle: pageTitle }) %>
+<section class="page-heading">
+  <p class="eyebrow">Step 1</p>
+  <h1>Quick Assessment</h1>
+  <p class="intro">Choose the area you would most like to understand first. Your selection is used only to demonstrate the page interaction and is not saved or sent to the server.</p>
+</section>
+
+<form class="panel" id="assessment-form">
+  <fieldset>
+    <legend>What would you like help with first?</legend>
+    <label class="choice">
+      <input type="radio" name="priority" value="essentials" required>
+      Protecting essential needs
+    </label>
+    <label class="choice">
+      <input type="radio" name="priority" value="urgent">
+      Understanding an urgent obligation
+    </label>
+    <label class="choice">
+      <input type="radio" name="priority" value="debt">
+      Understanding debt repayment options
+    </label>
+    <label class="choice">
+      <input type="radio" name="priority" value="stability">
+      Improving overall financial stability
+    </label>
+  </fieldset>
+  <button type="submit">Continue</button>
+  <p id="assessment-status" class="status" role="status" aria-live="polite"></p>
+  <p class="notice">This demonstration does not calculate financial recommendations, save information, or submit financial details to the server.</p>
+</form>
+<%- include("partials/footer") %>

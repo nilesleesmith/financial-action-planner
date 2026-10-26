@@ -1,0 +1,21 @@
+<%- include("partials/header", { pageTitle: pageTitle }) %>
+<section class="hero">
+  <p class="eyebrow">A clearer next step</p>
+  <h1>Make your next financial step clearer.</h1>
+  <p class="intro">Understand your situation, identify priorities, and make a plan that works for you.</p>
+  <a class="button-link" href="/assessment">Start a quick assessment</a>
+</section>
+
+<section class="panel" aria-labelledby="about-title">
+  <h2 id="about-title">Start with what matters most</h2>
+  <p>Financial decisions can feel difficult when several needs compete for attention. This application is being designed to help you understand your circumstances and consider practical next steps.</p>
+  <p class="notice">This demonstration illustrates the application's initial workflow. Financial recommendations and secure profile storage are not included in this demo.</p>
+</section>
+
+<section class="panel" aria-labelledby="api-title">
+  <h2 id="api-title">Application connection</h2>
+  <p>Use this check to confirm that the browser can reach the application API.</p>
+  <button type="button" id="check-api">Check API</button>
+  <p id="api-status" class="status" role="status" aria-live="polite">API has not been checked.</p>
+</section>
+<%- include("partials/footer") %>
